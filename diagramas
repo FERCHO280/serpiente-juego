@@ -1,6 +1,6 @@
 INICIAR JUEGO
 
-MIENTRAS el juego esté en ejecución HACER
+MIENTRAS el juego esté en ejecución 
 
     Mover la serpiente
 
