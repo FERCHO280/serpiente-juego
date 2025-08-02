@@ -1,1 +1,21 @@
+INICIAR JUEGO
+
+MIENTRAS el juego esté en ejecución HACER
+
+    Mover la serpiente
+
+    SI hay colisión con el borde o con el cuerpo ENTONCES
+        Mostrar "Game Over"
+        Terminar juego
+    FIN SI
+
+    SI no hay comida en el tablero ENTONCES
+        Generar comida aleatoria
+    SINO
+        La serpiente come
+        Aumentar puntuación
+        Aumentar longitud de la serpiente
+    FIN SI
+
+FIN MIENTRAS
 
