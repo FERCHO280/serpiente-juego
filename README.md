@@ -30,15 +30,17 @@ Teclas:
 
 
 ##  DEPENDENCIAS
-requisitos = [
+requisitos = 
     
     "python",
     "PyCharm 2025.1.3.1"
-]
+
 
 ## CARACTERÍSTICAS
-caracteristicas = [
-    "Detección de colisiones",
+caracteristicas = 
+
+    "Detección de colisiones"
+    
     "Crecimiento de serpiente"
-]
+
 
