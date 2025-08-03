@@ -94,3 +94,4 @@ while juego_activo:
             break
 
 pantalla.exitonclick()
+
