@@ -13,7 +13,7 @@ Implementación clásica del juego Snake en Python usando PyCharm.
 
 ##  CÓMO EJECUTAR
 # Requisitos: Python y Pycharm instalado
-copiar el codigo serpiente.py en pyCharm y ejecutarlo
+copiar el codigo SERPIENTE.py en pyCharm y ejecutarlo
 
 
 ##  CONTROLES
