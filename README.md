@@ -1,45 +1,36 @@
-# 🐍 Proyecto Snake Game
+# Proyecto Juego de la Serpiente 
 
 `SERPIENTE.py`  
-Implementación del clásico juego Snake en Python con Pygame.
+Implementación clásica del juego Snake en Python usando PyCharm.
 
 ```python
 """
-📁 REPOSITORIO
-├── SERPIENTE.py        # Script principal del juego
-└── Dibujo 2 (1).png   # Diagrama/diseño del juego
+ ESTRUCTURA DEL PROYECTO
+├── SERPIENTE.py        # Código principal del juego
+└── Diagrama de flujo   # Representacion gráfica
+└──pseudocódigo        # Descripción narrativa
 """
 
-## 🚀 EJECUCIÓN
-# Requiere Python 3.x y Pygame instalado
-pip install pygame
-python SERPIENTE.py
+##  CÓMO EJECUTAR
+# Requisitos: Python y Pycharm instalado
+copiar el codigo serpiente.py en pyCharm y ejecutarlo
 
-## 🎮 CONTROLS
+
+##  CONTROLES
 """
 Teclas:
-↑ → ↓ ← : Movimiento
-P       : Pausa
-R       : Reiniciar
-ESC     : Salir
+↑ → ↓ ← : Mover serpiente
 """
 
-## 🛠️ DEPENDENCIAS
-requirements = [
+##  DEPENDENCIAS
+requisitos = [
     "python>=3.8",
-    "pygame>=2.0"
+    "pyCharm>=2.0"
 ]
 
-## 🌟 FEATURES
-features = [
-    "Sistema de puntuación",
-    "Aumento de velocidad progresivo",
-    "Menú de pausa", 
-    "Colisiones detectadas"
+## CARACTERÍSTICAS
+caracteristicas = [
+    "Detección de colisiones",
+    "Crecimiento de serpiente"
 ]
 
-## 📜 LICENCIA
-"""
-MIT License
-Copyright (c) 2023 FERCHO280
-"""
