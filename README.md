@@ -3,15 +3,15 @@
 `SERPIENTE.py`  
 Implementación clásica del juego Snake en Python usando PyCharm.
 
-```python
-"""
- ESTRUCTURA DEL PROYECTO
-├── SERPIENTE.py        # Código principal del juego
-└── Diagrama de flujo   # Representacion gráfica
-└──pseudocódigo        # Descripción narrativa
+
+
+## ESTRUCTURA DEL PROYECTO
+SERPIENTE.py        # Código principal del juego
+Diagrama de flujo   # Representacion gráfica
+pseudocódigo        # Descripción narrativa
 """
 
-##  CÓMO EJECUTAR
+## CÓMO EJECUTAR
 # Requisitos: Python y Pycharm instalado
 copiar el codigo SERPIENTE.py en pyCharm y ejecutarlo
 
