@@ -9,7 +9,7 @@ Implementación clásica del juego Snake en Python usando PyCharm.
 *SERPIENTE.py*:        Código principal del juego
 
 
-*Diagrama de flujo*:   Representacion gráfica
+*Diagrama de flujo.png*:   Representacion gráfica
 
 
 *Pseudocódigo*:         Descripción narrativa
