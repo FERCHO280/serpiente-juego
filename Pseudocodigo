@@ -1,22 +1,36 @@
-INICIAR JUEGO
+# Pseudocódigo del Juego de Serpiente
 
-MIENTRAS el juego esté en ejecución 
-
-    Mover la serpiente
-
-    SI hay colisión con el borde o con el cuerpo ENTONCES
-        Mostrar "Game Over"
-        Terminar juego
-    FIN SI
-
-    SI no hay comida en el tablero ENTONCES
-        Generar comida aleatoria
-
-SINO
-        La serpiente come
-        Aumentar puntuación
-        Aumentar longitud de la serpiente
-    FIN SI
-
-FIN MIENTRAS
+Algoritmo Principal
+Algoritmo JuegoSerpiente:
+    Inicializar juego_iniciado = Falso
+    Inicializar juego_terminado = Falso
+    Inicializar puntuacion = 0
+    Inicializar longitud_serpiente = 1
+    
+    Repeat:
+        MostrarMenu()
+        
+        If TeclaPresionada() == 'Inicio' Then:
+            juego_iniciado = Verdadero
+            IniciarJuego()
+        EndIf
+        
+        While juego_iniciado AND NOT juego_terminado Do:
+            MoverSerpiente()
+            
+            If VerificarColisionBordes() OR VerificarColisionCuerpo() Then:
+                juego_terminado = Verdadero
+                MostrarGameOver()
+            Else:
+                If VerificarComidaPresente() Then:
+                    SerpienteCome()
+                    puntuacion += 10
+                    longitud_serpiente += 1
+                    GenerarComidaAleatoria()
+                EndIf
+            EndIf
+        EndWhile
+        
+    Until TeclaPresionada() == 'Salir'
+EndAlgorithm
 
