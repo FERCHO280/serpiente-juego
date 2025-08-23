@@ -15,7 +15,7 @@ Implementación clásica del juego Snake en Python usando PyCharm.
 *Pseudocódigo*:         Descripción narrativa
 
 
-*Diagrama de arquitectura": Describe los módulos principales del sistema
+*Diagrama de arquitectura*: Describe los módulos principales del sistema
 
 
 *Diagrama de casos de uso*:  Representación visual del comportamiento de un sistema
