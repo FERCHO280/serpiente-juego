@@ -28,7 +28,7 @@ Implementación clásica del juego Snake en Python usando PyCharm.
 
 -En menú seleccionar Iniciar partida
 
--En caso de seleccionar dificultad elegir fácil,medio, dificil e iniciar partida
+-En caso de seleccionar dificultad elegir fácil,medio, dificil con *enter* e iniciar partida
 
 
 ##  CONTROLES
