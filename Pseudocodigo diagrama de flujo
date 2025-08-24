@@ -1,36 +1,34 @@
-# Pseudocódigo del Juego de Serpiente
+INICIO
 
-Algoritmo Principal
-Algoritmo JuegoSerpiente:
-    Inicializar juego_iniciado = Falso
-    Inicializar juego_terminado = Falso
-    Inicializar puntuacion = 0
-    Inicializar longitud_serpiente = 1
+MOSTRAR_MENU()
+
+SI jugador_presiona_Iniciar juego ENTONCES
+    INICIAR_JUEGO()
     
-    Repeat:
-        MostrarMenu()
-        
-        If TeclaPresionada() == 'Inicio' Then:
-            juego_iniciado = Verdadero
-            IniciarJuego()
-        EndIf
-        
-        While juego_iniciado AND NOT juego_terminado Do:
-            MoverSerpiente()
-            
-            If VerificarColisionBordes() OR VerificarColisionCuerpo() Then:
-                juego_terminado = Verdadero
-                MostrarGameOver()
-            Else:
-                If VerificarComidaPresente() Then:
-                    SerpienteCome()
-                    puntuacion += 10
-                    longitud_serpiente += 1
-                    GenerarComidaAleatoria()
-                EndIf
-            EndIf
-        EndWhile
-        
-    Until TeclaPresionada() == 'Salir'
-EndAlgorithm
+    REPETIR
+        MOVER_SERPIENTE()
+
+        SI NO HAY_COMIDA() ENTONCES
+            GENERAR_COMIDA_ALEATORIA()
+        FIN_SI
+
+        SI SERPIENTE_COME() ENTONCES
+            AUMENTAR_PUNTUACION()
+            AUMENTAR_LONGITUD()
+        FIN_SI
+
+        SI COLISION_CON_BORDES_O_CUERPO() ENTONCES
+            GAME_OVER()
+
+            SI REINICIAR() = VERDADERO ENTONCES
+                INICIAR_JUEGO()
+            SINO
+                SALIR
+            FIN_SI
+        FIN_SI
+
+    HASTA QUE jugador_decida_salir
+FIN_SI
+
+FIN
 
